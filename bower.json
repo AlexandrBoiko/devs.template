@@ -1,0 +1,30 @@
+{
+  "name": "gulp_t_clear",
+  "version": "0.0.1",
+  "authors": [
+    "alex"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "*",
+    "modernizer": "^2.8.2",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "include-media": "^1.4.8",
+    "Ionicons": "ionicons#^2.0.1",
+    "jcf": "^1.2.3",
+    "jquery-once": "^2.1.2",
+    "masonry": "^4.1.1",
+    "slick-carousel": "^1.6.0",
+    "social-likes": "^3.1.1",
+    "Swiper": "swiper#^3.3.1",
+    "components-font-awesome": "^4.6.3",
+    "compass-sass-mixins": "*",
+    "bootstrap": "^3.3.7"
+  }
+}

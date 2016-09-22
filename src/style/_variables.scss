@@ -1,0 +1,88 @@
+$navHeight: 130px;
+
+$font-size:10px;
+$line-height:1.2;
+
+$colorBrand: #00b153;
+$colorSilver: #666767;
+$color-border: #f1f1f1;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #7e7e7e;
+$color-red: #ff3c00;
+$color-blue: #0f60a5;
+$color-blue-light: #21bcff;
+
+$color-bg-blue: #d0e0ed;
+$color-bg-grey: #f0f0f0;
+$color-bg-grey-active: #e1e1e1;
+$color-bg-grey-dark: #454547;
+$color-border-grey: #868686;
+$color-nav-green: #00a41f;
+$color-nav-green-light: #08cb08;
+$color-nav-red: #d10829;
+$color-nav-yellow: #eb940a;
+$color-nav-purple: #be0aeb;
+$color-nav-blue: #01b7e5;
+
+// Responsive breakpoints. "Include media" settings.
+// $tablet = $screen-sm
+
+$tablet: 768px;
+$phone: 640px;
+$small-phone: 320px;
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin small-phone {
+  @media screen and (max-width: #{$small-phone}){
+    @content;
+  }
+}
+
+
+@mixin input-placeholder{
+  &::-webkit-input-placeholder{
+    @content;
+  }
+  &:-moz-placeholder{
+    @content;
+  }
+  &::-moz-placeholder{
+    @content;
+  }
+  &:-ms-input-placeholder{
+    @content;
+  }
+}
+
+%clearfix {
+  &:after{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+}
+.clearfix{
+  @include clearfix
+}
+// Helper function to strip units.
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

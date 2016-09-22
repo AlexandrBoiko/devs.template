@@ -1,0 +1,64 @@
+[data-template="lookbook_inside"] {
+  @include tablet{
+    .lookbook_inside{
+      @include clearfix;
+      .link-to-back{
+        @include clearfix;
+        margin-top: 20px;
+        a{
+          font-size: 18px;
+          color: #a3a3a3;
+          &:hover{
+            text-decoration: none;
+          }
+          i{
+            background: rgba(0, 0, 0, 0) url("../images/link-to-back.png") no-repeat scroll center center;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            margin-right: 10px;
+            float: left;
+          }
+          span{
+            float: left;
+            line-height: 30px;
+          }
+        }
+      }
+      h1{
+        text-transform: uppercase;
+        font-size: 32px;
+        margin: 20px 0 25px;
+      }
+    }
+    .full-lookbook{
+      @include clearfix;
+      width: 100%;
+      display: table;
+      margin-bottom: 25px;
+      .image-row{
+        @include clearfix;
+        margin: 0 0 26px;
+      }
+      .image-block{
+        display: block;
+        float: left;
+        position: relative;
+        width: 50%;
+        &:first-of-type{
+          padding-right: 11px;
+        }
+        &:last-of-type{
+          padding-left: 11px;
+        }
+        img{
+          width: 100%;
+        }
+        a{
+          position: relative;
+          display: block;
+        }
+      }
+    }
+  }
+}

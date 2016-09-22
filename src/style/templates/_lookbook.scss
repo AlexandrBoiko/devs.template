@@ -1,0 +1,44 @@
+[data-template="lookbook"] {
+
+  @include tablet{
+    .lookbook{
+      @include clearfix;
+      h1{
+        text-transform: uppercase;
+        font-size: 35px;
+        margin: 35px 25px;
+      }
+    }
+    .list-lookbook{
+      width: 100%;
+      display: block;
+      margin-bottom: 25px;
+      .image-block{
+        display: block;
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-bottom: 26px;
+        img{
+          width: 100%;
+        }
+        .autor{
+          position: absolute;
+          bottom:0;
+          background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+          padding: 28px 10%;
+          width: 100%;
+          p{
+            color: $color-white;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            text-align: center;
+            text-transform: none;
+          }
+
+        }
+      }
+    }
+  }
+}
