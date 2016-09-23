@@ -11,8 +11,7 @@ include '_header.php';
 
               <div class="swiper-slide">
                 <a href="#">
-                  <div class="">
-                    <!-- <img src="http://localhost/saks_mobile/uploads/slider/slider_img.png" class="image img-responsive"> -->
+                  <div class="">   
                     <img src="uploads/slider/slider_img.png" class="image img-responsive">
                   </div>
                   <div class="title center black normal">
