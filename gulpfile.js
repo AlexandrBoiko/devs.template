@@ -140,8 +140,8 @@ gulp.task('image:build', function() {
 
 gulp.task('fonts:build', function() {
 
-   gulp.src(path.src.fontsAwesome)
-      .pipe(gulp.dest(path.build.fonts));
+   // gulp.src(path.src.fontsAwesome)
+   //    .pipe(gulp.dest(path.build.fonts));
 
    gulp.src(path.src.Ionicons)
       .pipe(gulp.dest(path.build.fonts));
