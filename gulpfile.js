@@ -44,7 +44,7 @@ var path = {
       img: 'src/images/**/*.*',
       uploads: 'src/uploads/**/*.*',
       fonts: 'src/fonts/**/*.*',
-      fontsAwesome: 'bower_components/components-font-awesome/fonts/*.*',
+      // fontsAwesome: 'bower_components/components-font-awesome/fonts/*.*',
       Ionicons: 'bower_components/Ionicons/fonts/*.*',
       sprite: 'src/sprite/*.*'
    },
